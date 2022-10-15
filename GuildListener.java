@@ -39,12 +39,12 @@ public class GuildListener extends ListenerAdapter {
      */
     @Override
     public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
-        event.getGuild().getTextChannelById("1010295952394952837") // general channel's ID
+        event.getGuild().getTextChannelById("") // general channel ID
                 .sendMessage("Welcome to the server " + event.getMember().getAsMention() + "!");
     }
     @Override
     public void onGuildMemberRemove(@NotNull GuildMemberRemoveEvent event) {
-        event.getGuild().getTextChannelById("1010295952394952837") // general channel's ID
+        event.getGuild().getTextChannelById("") // general channel ID
                 .sendMessage("Goodbye " + event.getMember().getAsMention() + "!");
     }
 }
