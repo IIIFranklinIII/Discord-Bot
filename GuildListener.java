@@ -26,21 +26,7 @@ public class GuildListener extends ListenerAdapter {
         if(content.equals("!sayHi")) {
             channel.sendMessage("Hello everyone!").queue();
         }
-        else if(content.equals("!help")) {
-            channel.sendMessage("!!Here you can read all of my text listeners!! \n \n" +
-                                     "1) !sayHi - that one command for me to say *Hello everyone* \n" +
-                                     "2) !help - that's for display all of commands \n" +
-                                     "3) !credits - display all licenses").queue();
-        } else if(content.equals("!credits")) {
-            channel.sendMessage("@author Wild_Soap \n" +
-                                     "@date 09.1.2022 \n" +
-                                     "@productName: Bao The Cat \n" +
-                                     "@productType: discord-bot \n" +
-                                     "@version 2.1.5 \n \n" +
-                                     "Copyright (C) 2022 Free Software Foundation, \nInc. <https://fsf.org> \n" +
-                                     "Everyone is permitted to copy and distribute verbatim copies \n" +
-                                     "of this license document, but changing it is not allowed.").queue();
-        }
+       
         System.out.println("Message received from " +
                 event.getAuthor().getName() +
                 ": " +
