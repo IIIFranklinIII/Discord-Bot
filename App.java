@@ -18,7 +18,7 @@ public class App extends ListenerAdapter {
 
     public static void main(String[] args) throws LoginException, IllegalArgumentException, InterruptedException {
 
-        JDA api = JDABuilder.create("token", Arrays.asList(INTENTS))
+        JDA api = JDABuilder.create("token", Arrays.asList(INTENTS)) //discord bot token
                 .setActivity(Activity.playing("Tetris"))
                 .setStatus(OnlineStatus.ONLINE)
                 .addEventListeners(new GuildListener())
