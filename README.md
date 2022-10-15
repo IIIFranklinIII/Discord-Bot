@@ -13,3 +13,6 @@
    - !help - get command list
 3. Guild listener:
    - The Bot monitors the joining or leaving of a guild member
+4. Used library:
+   - [JDA(Java Discord API)](https://github.com/DV8FromTheWorld/JDA)
+![](https://php-web.info/wp-content/uploads/2019/11/Discord-LogoWordmark-Color.png)
