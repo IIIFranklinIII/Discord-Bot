@@ -76,7 +76,7 @@ public class SlashCommands extends ListenerAdapter {
             event.replyEmbeds(result.build()).queue();
         }
     }
-    // Also bot's command inner
+    // Another bot command content
     public String randomize(String url) {
         ThreadLocalRandom random = ThreadLocalRandom.current();
         return url + "&" + random.nextInt() + "=" + random.nextInt();
